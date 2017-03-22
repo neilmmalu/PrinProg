@@ -193,6 +193,7 @@ static void assign()
 	// }
 
 	char temp = token;
+	printf("\ntemp: %c\n", temp);
 	next_token();
 	// if(token != '='){
 	// 	ERROR("Expected equal sign for assignment statement\n");
