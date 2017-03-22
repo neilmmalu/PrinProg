@@ -255,10 +255,10 @@ static void morestmts()
 static void stmtlist()
 {
 	/* YOUR CODE GOES HERE */
-	if (!is_identifier(token)) {
-		ERROR("Expected identifier\n");
-		exit(EXIT_FAILURE);
-	}
+	// if (!is_identifier(token)) {
+	// 	ERROR("Expected identifier\n");
+	// 	exit(EXIT_FAILURE);
+	// }
 	stmt();
 	morestmts();
 }
