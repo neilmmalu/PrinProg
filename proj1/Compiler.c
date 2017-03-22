@@ -187,10 +187,10 @@ static int expr()
 static void assign()
 {
 	/* YOUR CODE GOES HERE */
-	if (!is_identifier(token)) {
-		ERROR("Expected identifier\n");
-		exit(EXIT_FAILURE);
-	}
+	// if (!is_identifier(token)) {
+	// 	ERROR("Expected identifier\n");
+	// 	exit(EXIT_FAILURE);
+	// }
 
 	char temp = token;
 	next_token();
