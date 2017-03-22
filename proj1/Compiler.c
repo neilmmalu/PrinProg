@@ -218,7 +218,6 @@ static void print()
 	}
 
 	CodeGen(OUTPUTAI, token, EMPTY_FIELD, EMPTY_FIELD);
-	next_token();
 }
 
 static void stmt()
