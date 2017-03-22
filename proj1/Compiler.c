@@ -193,12 +193,11 @@ static void assign()
 	// }
 
 	char temp = token;
-	printf("\ntemp: %c\n", temp);
 	next_token();
-	// if(token != '='){
-	// 	ERROR("Expected equal sign for assignment statement\n");
-	// 	exit(EXIT_FAILURE);
-	// }
+	if(token != '='){
+		ERROR("Expected equal sign for assignment statement\n");
+		exit(EXIT_FAILURE);
+	}
 	next_token();
 	int reg = expr();
 	CodeGen(STOREAI, temp, reg, EMPTY_FIELD);
@@ -231,7 +230,7 @@ static void stmt()
 	// }
 	switch(token){
 
-		case '!':	
+		case '#':	
 			print();
 			break;
 		default:
