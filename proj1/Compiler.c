@@ -241,10 +241,10 @@ static void stmt()
 static void morestmts()
 {
 	/* YOUR CODE GOES HERE */
-	if (!is_identifier(token)) {
-		ERROR("Expected identifier\n");
-		exit(EXIT_FAILURE);
-	}
+	// if (!is_identifier(token)) {
+	// 	ERROR("Expected identifier\n");
+	// 	exit(EXIT_FAILURE);
+	// }
 	if(token != ';'){
 		return;
 	}
