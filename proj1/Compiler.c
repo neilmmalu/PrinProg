@@ -224,10 +224,10 @@ static void print()
 static void stmt()
 {
 	/* YOUR CODE GOES HERE */
-	if (!is_identifier(token)) {
-		ERROR("Expected identifier\n");
-		exit(EXIT_FAILURE);
-	}
+	// if (!is_identifier(token)) {
+	// 	ERROR("Expected identifier\n");
+	// 	exit(EXIT_FAILURE);
+	// }
 	switch(token){
 
 		case '!':	
